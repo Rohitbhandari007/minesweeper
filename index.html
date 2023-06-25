@@ -7,16 +7,20 @@
       content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>MineSweeper</title>
   </head>
   <body>
-    <div class="game-container">
+    <div class="main-container">
+      <h1>MineSweeper</h1>
+      <div class="game-over">Game over</div>
+      <div class="score-board">Score Board</div>
       <div class="game-stats">
-        <div class="game-over">Game over</div>
-        <div class="score-board">Score Board</div>
+        <div onclick="startGame()" class="start-game-btn">Start Game</div>
+        <div onclick="restartGame()" class="restart-game-btn">Restart Game</div>
       </div>
-
-      <div class="game-area"></div>
+      <div class="game-container">
+        <div class="game-area"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

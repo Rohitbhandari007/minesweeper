@@ -1,24 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  height: 100vh;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  font-family: "Pacifico", cursive;
+}
+h1 {
+  align-self: center;
+  font-family: "Pacifico", cursive;
+}
 
 .game-container {
   display: flex;
-  background-color: #333;
+  background-color: #111;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  flex-direction: column;
+  /* height: 80vh; */
+  height: 40%;
+  flex-direction: row;
+
   gap: 5px;
 }
 .game-area {
   display: grid;
-  background-color: rgb(57, 57, 57);
+  /* background-color: rgb(57, 57, 57); */
   /* background-color:  */
   border-radius: 50%;
-  gap: 2px;
+  /* gap: 2px; */
+  width: auto;
   text-align: center;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
@@ -27,37 +45,83 @@
   border: 1px solid gray;
   cursor: pointer;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   /* transition: 0.2s ease; */
   max-width: 20px;
   /* border-radius: 50px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 10px;
+  min-width: 10px;
+  max-height: 10px;
+  min-height: 10px;
 }
 .game-stats {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 38%;
   gap: 10px;
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Pacifico", cursive;
+  color: white;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 10px;
 }
+
 .game-over {
   display: flex;
+  align-items: center;
   padding: 10px;
+  justify-content: center;
   border-radius: 10px;
   color: black;
   background-color: rgb(210, 136, 136);
-  font-family: "Pacifico", cursive;
-  text-align: center;
+  font-family: "Poppins", cursive;
+  font-weight: 800;
   opacity: 0;
+  min-width: 100px;
+  max-width: 100px;
 }
 .score-board {
   display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(136, 172, 210);
+  font-family: "Poppins", cursive;
+  font-weight: 800;
+  opacity: 0;
+  min-width: 100px;
+  max-width: 100px;
+}
+.start-game-btn {
   padding: 10px;
   border-radius: 10px;
   color: black;
   background-color: rgb(136, 172, 210);
   font-family: "Pacifico", cursive;
-  text-align: center;
-  opacity: 1;
+  border: none;
+  min-width: 100px;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.restart-game-btn {
+  display: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(136, 172, 210);
+  font-family: "Pacifico", cursive;
+  border: none;
+  min-width: 100px;
+  max-width: 100px;
+  cursor: pointer;
 }
